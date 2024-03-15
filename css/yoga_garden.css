@@ -1,0 +1,400 @@
+* {box-sizing: border-box;}
+body {margin: 0;
+      background-color: #000000;
+      color: #FFFFFF;
+      font-family: Tahoma, Verdana, sans-serif;
+      font-size: 1em;}
+main {margin-top: 30px;
+      padding: 0px;
+      display: block;
+      width: 100%;}
+main a:link {text-decoration: none; color: #FFFFFF;}
+main a:visited {text-decoration: none; color: #D3D3D3;}
+main a:hover {text-decoration: none; color: #FFCC99;}
+header {background-color: #000000;
+        background-image: url(../images/yoga_sunset.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        color: #FFFFFF;}
+header a:link {text-decoration: none; color: #FFFFFF;}
+header a:visited {text-decoration: none; color: #D3D3D3;}
+header a:hover {text-decoration: none; color: #FFFFFF;}
+h1 {text-align: center;
+    position: relative;
+    top: 60%;}
+h2 {text-align: center;}
+nav {text-align: center;
+     position: relative;
+     top: -15px;
+     right: 15px;
+     width: 100%; 
+     height: 20px; 
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;}
+nav a {text-decoration: none;
+       display: block;
+       height: 30px;}
+nav a:link {text-decoration: none; color: #FFFFFF;}
+nav a:visited {text-decoration: none; color: #D3D3D3;}
+nav ul {list-style-type: none;
+        display: inline;
+        flex-flow: row wrap;
+        text-align: center;
+        justify-content: center;}
+nav li {height: 30px;
+        font-size: 75%;
+        background-color: #000000;
+        display: block;}
+#wrapper {margin-top: 0px;
+          text-align: center;
+          width: 100%;}
+.content {height: 40vh;
+       padding: 1em;}
+#welcome {
+       position: relative;
+       top: 100px;
+       background-color: #FFFFFF;
+       margin: auto;
+       color: #000000;
+       padding: 0px;
+       height: auto;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       justify-content: center;}
+#instagramFeed {display: none;}
+.socialMedia {
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        bottom: -100px;
+        height: 90px;
+        width: 180px;
+        justify-content: space-around;
+}
+
+#instagramLink img {
+       width: 40px;
+}
+#fbLink img {
+       width: 40px;
+}
+#linkedinLink img {
+       width: 40px;
+        
+}
+#about {position: relative;
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        color: #000000;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;}
+#instructors {position: relative;
+              display: flex;
+              margin: auto;
+              width: 100%;
+              height: auto;
+              background-color: #FFFFFF;
+              color: #000000;
+              flex-direction: column;
+              text-align: center;
+              justify-content: center;}
+#types_of_yoga {position: relative;
+                top: 100px;
+                display: flex;
+                margin: auto;
+                width: 100%;
+                height: auto;
+                background-color: #FFFFFF;
+                color: #000000;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                font-size: 70%;}
+#types_of_yoga img {width: 50%;
+                    margin: auto;}
+#yoga_types_footer, #preparation_footer {margin: auto;
+                    display: flex;
+                    position: relative;
+                    margin-top: 0;}
+#anchors a:link {color: #696969;}
+#anchors a:visited {color: #B36B00;}
+#anchors a:hover {color: #FF9933;}
+#preparation {display: flex;
+              position: relative;
+              top: 100px;
+              margin: auto;
+              width: 100%;
+              flex-direction: column;
+              text-align: center;
+              justify-content: center;
+              background-color: #FFFFFF;
+              color: #000000;}
+#preparation img {width: 50%;
+                  margin: auto;}
+#contact {display: flex;
+          position: relative;
+          top: 100px;
+          height: auto;
+          margin: auto;
+          width: 100%;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          background-color: #FFFFFF;
+          color: #000000;}
+#googleMaps {width: 100%; 
+             height: auto; 
+             border: 0;
+             margin: auto;
+             display: block;
+             justify-content: center;} 
+#calendar {display: flex;
+           position: relative;
+           margin: auto;
+           height: auto;
+           top: 100px;
+           width: 100%;
+           flex-direction: column;
+           text-align: center;
+           justify-content: center;
+           background-color: #FFFFFF;
+           color: #000000;}
+#book_a_class a:link {color: #696969;}
+#book_a_class a:visited {color: #B36B00;}
+#book_a_class a:hover {color: #FFCC99;}
+.yogaClass {background-color: #000000;
+              color: #FFFFFF;}
+.yogaClassSmall {background-color: #FFFFFF;
+                 color: #B36B00;}
+.popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        line-height: 1.5;
+        padding: 20px;
+        color: #000000;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 9999;
+    }
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9998;
+    }
+#appointmentTime {display: block; 
+        position: relative;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;}
+#appointmentConfirmed {display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        position: relative;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        top: 100px;
+        width: 100%;
+        background-color: #FFFFFF;
+        color: #000000;
+        height: auto;}
+#monthDateYear {text-decoration-line: underline;}
+#businessEmail {color: #000000;}
+table {visibility: hidden;}
+footer {font-size: .70em;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        background-color: #000000;
+        color: #FFFFFF;
+        bottom: -90px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        }
+footer a:link {text-decoration: none; color: #D3D3D3;}
+footer a:visited {text-decoration: none; color: #1a1a1a;}
+footer a:hover {text-decoration: none; color: #FFBF80;}
+
+@media (min-width: 360px) {
+        h1 {top: 70%;}
+        nav li {padding: 6px;
+                display: inline-block;}
+        #welcome, #types_of_yoga, #preparation, #calendar, #contact {top: 20px;} 
+        footer {margin-top: auto;}
+        }
+@media (min-width: 400px) {
+        h1 {top: 75%;}
+        nav li {padding: 7px;
+                display: inline-block;}
+        footer {margin-top: auto;}
+}
+
+@media (min-width: 600px) {
+    h1 {position: relative;
+        top: 75%;}
+    nav {top: -10px;}
+    nav ul {display: flex; 
+            flex-flow: row nowrap;
+	    justify-content: flex-end;}
+    nav li {width: 8em;
+            display: inline-block;}
+    #welcome {top: -20px;}
+    .socialMedia {top: 5px;}
+    #types_of_yoga {top: -20px;}
+    #preparation {top: -20px;}
+    #calendar {top: -20px;}
+    #contact {top: -20px;}
+    footer {bottom: -40px;}
+    }
+
+@media (min-width: 1024px) {
+    main {padding-left: 2em;
+    padding-right: 2em;}
+    header {font-size: 100%;
+        background-size: 65%;
+        position: relative;
+        top: -34px;}
+    h1 {position: relative;
+        margin-left: -100px;
+        top: 50%;
+        text-align: center;}
+    #welcome, #about {z-index: 1;
+              width: 69%;
+              top: -180px;}
+    #instructors {top: -180px;
+                  width: 69%;}
+    .content {height: 80vh;
+              padding-top: 5em;
+              padding-left: 8em;}
+    #instagramFeed {width: 69%;
+                margin: auto;
+                display: flex;
+                position: relative;
+                top: -180px;
+                flex-flow: row wrap;
+                border: 2px solid #000000;
+                height: 200px;
+                justify-content: center;
+                text-align: left;
+                background-color: #FF9933;
+                color: #000000;}
+    #instagramFeed img {width: 30%;
+                        height: auto;}
+        .socialMedia {position: relative;
+                      top: -150px;
+                      width: 100px;}
+        #instagramLink img {
+                width: 40px;
+                display: none;
+                }
+        #fbLink img {
+                width: 40px;
+                 }
+                 #linkedinLink img {
+                 width: 40px;
+                 }
+        #types_of_yoga {
+                margin: auto;
+                display: block;
+                position: relative;
+                top: -180px;
+                width: 69%;
+                height: 500px;
+                overflow-x: hidden;
+                overflow-y: auto;}
+        #appointmentConfirmed {top: -180px;
+                               width: 69%;}                 
+        #preparation, #calendar {width: 69%;
+                      margin: auto;
+                      top: -180px;}
+        #calendarMonth {font-size: 70%;}
+        #contact {width: 69%;
+                  margin: auto;
+                  top: -180px;}
+        table {visibility: visible;
+                margin: auto;
+                border: 1px solid #999999;
+                border-collapse: collapse;
+                table-layout: fixed;
+                width: 100%;}
+        table a:link {color: #696969;}
+        table a:hover {color: #FFFFFF;}
+        th {
+             border: 1px solid #999999;
+             font-size: 70%;
+             background-color: #C0C0C0;
+        }
+        td {
+             border: 1px solid #999999;
+             height: 100px;
+             width: 100px;
+             padding: 5px;
+             vertical-align: top;
+        }
+        caption {
+                font-size: 200%;
+        }
+        .day {
+              text-align: right;
+                }
+        .yogaClass {
+              font-size: 60%;
+              text-align: left;
+              background-color: #000000;
+              color: #999999;
+              border-radius: 5px;
+              padding: 2px;
+        }
+      #book_a_class {display: none}
+      nav {display: flex;
+           position: relative;
+           z-index: 2;
+           top: -160px;
+           margin: auto;}
+      nav li {position: relative;
+            top: -16px;
+            font-size: 90%;
+            background-color: #1a1a1a;
+            border: solid 1px #000000;
+            padding: 0;
+            display: inline-block;}
+      nav li:hover{background-color: #333333;}
+      nav a {width: 100%;}
+      footer {bottom: 30px;}
+      
+    }
+
+@media (min-width: 1280px) {
+        h1 {top: 60%;}
+        nav li {padding: 0;
+                top: -16px;
+                font-size: 100%;
+                display: inline-block;
+                background-color: #1a1a1a;
+                border: solid 1px #000000;}
+        nav li:hover{background-color: #333333;}
+        nav a {width: 100%;}
+        footer {margin-top: auto;}
+}
+
+   

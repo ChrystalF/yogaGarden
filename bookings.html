@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/yoga_garden.css">
+<title>Bookings</title>
+<meta charset="utf-8">
+</head>
+<body>
+<header class="content">
+ <a href="index.html"><h1>Yoga Garden</h1></a>
+</header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home</a></li>  
+  <li><a href="yoga_types.html">Types of Yoga</a></li>  
+  <li><a href="preparation.html">Preparation</a></li>  
+  <li><a href="bookings.html">Bookings</a></li>
+  <li><a href="contact.html">Contact</a></li>
+ </ul>
+</nav>
+<div id="wrapper">
+<main>
+ <div id="calendar">
+ <h2>Book a class:</h2>
+   <!-- Example of available classes to book. -->
+    <div id="book_a_class">
+     <h3>Available Classes</h3><br>
+      Click on an available class and fill out the registration form.<br>
+      <p id="monthDateYear">September 12th, 2023</p><br>
+      <span class="yogaClassSmall" onclick="showForm('vinyasa')">Vinyasa Yoga&nbsp;11:30am</span><br>
+      <span class="yogaClassSmall" onclick="showForm('power')">Power Yoga&nbsp;1:00pm</span><br>
+      <span class="yogaClassSmall" onclick="showForm('restorative')">Restorative Yoga&nbsp;4:30pm</span>
+    </div>
+    <table> <!-- Sample calendar. -->
+      <caption><span id="calendarMonth"></span></caption>
+      <thead>
+        <tr>
+          <th>Sunday</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+        </tr>
+        <tr>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+        </tr>
+        <tr>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"><br>
+            <span class="yogaClass" onclick="showForm('vinyasa')">Vinyasa Yoga&nbsp;11:30am</span><br>
+            <span class="yogaClass" onclick="showForm('power')">Power Yoga&nbsp;1:00pm</span><br>
+            <span class="yogaClass" onclick="showForm('restorative')">Restorative Yoga&nbsp;4:30pm</span>
+            </div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+        </tr>
+        <tr>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+        </tr>
+        <tr>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+          <td><div class="day"></div></td>
+        </tr>
+        <tr>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        <td><div class="day"></div></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+    
+    <form id="vinyasaForm" action="appointment_confirmation.html" method="get" class="popup">
+      <h2>Vinyasa 11:30am Registration</h2>
+      <label>First Name:</label>
+        <input type="text" name="firstname" title="First Name" required><br>
+      <label>Last Name:</label>
+        <input type="text" name="lastname" title="Last Name" required><br>
+      <label>Email:</label> 
+        <input type="email" name="email" title="Email" required><br>
+      <label>Phone Number:</label>
+        <input type="tel" name="phone" title="Phone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+          <input type="submit" value="Submit" class="submit-button" id="vinyasaSubmitButton">
+    </form>
+
+    
+    <form id="powerForm" action="appointment_confirmation.html" method="get" class="popup">
+      <h2>Power Yoga 1:00pm Registration</h2>
+      <label>First Name:</label>
+      <input type="text" name="firstName" title="First Name" required><br>
+    <label>Last Name:</label>
+      <input type="text" name="lastName" title="Last Name" required><br>
+    <label>Email:</label> 
+      <input type="email" name="email" title="Email" required><br>
+    <label>Phone Number:</label>
+      <input type="tel" name="phone" title="Phone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <input type="submit" value="Submit" class="submit-button" id="powerSubmitButton">
+    </form>
+
+    
+    <form id="restorativeForm" action="appointment_confirmation.html" method="get" class="popup">
+      <h2>Restorative Yoga 4:30pm Registration</h2>
+      <label>First Name:</label>
+      <input type="text" name="firstname" title="First Name" required><br>
+    <label>Last Name:</label>
+      <input type="text" name="lastname" title="Last Name" required><br>
+    <label>Email:</label> 
+      <input type="email" name="email" title="Email" required><br>
+    <label>Phone Number:</label>
+      <input type="tel" name="phone" title="Phone Number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <input type="submit" value="Submit" class="submit-button" id="restorativeSubmitButton">
+    </form>
+
+
+<div id="overlay" class="overlay"></div>
+ 
+<script src="js/calendar.js"></script>
+<script src="js/updateYear.js"></script>
+<script src="js/showForm.js" async></script>
+<script src="js/bookAppointment.js" defer></script>
+</main>
+</div>
+<footer>
+</footer>
+
+</body>
+</html>
