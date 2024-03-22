@@ -1,5 +1,5 @@
 /* 
-This script updates the calendar with the dates of the current month and year to help users book yoga classes.
+    This program updates the calendar with the dates of the current month and year to help users book yoga classes.
 */
 function updateCalendarDates() {
     let date = new Date();
