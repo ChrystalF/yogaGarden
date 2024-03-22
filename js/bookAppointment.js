@@ -1,5 +1,5 @@
 /*
-This script allows customers to book an appointment for a yoga class.
+  This program allows customers to book an appointment for a yoga class.
 */
 
 
