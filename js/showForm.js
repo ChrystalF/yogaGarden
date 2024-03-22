@@ -1,5 +1,5 @@
 /*
-  This script retrieves a yoga class registration form and makes it visible.
+  This program retrieves a yoga class registration form and makes it visible.
 */
 
 function showForm(className) {
