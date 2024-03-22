@@ -1,4 +1,6 @@
 /*
+    The purpose of this program is to manage appointments. It retrieves form data from local storage and displays
+    the confirmation of the yoga class that was booked, along with the date and time.
 */
 
 // Function to update the appointment time message
